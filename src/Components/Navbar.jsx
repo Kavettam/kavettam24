@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import "./Navbar.scss";
-import Logo from "../assets/dhee (1).png";
+import Logo from "../assets/dhee3.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

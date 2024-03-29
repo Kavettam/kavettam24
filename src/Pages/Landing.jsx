@@ -13,7 +13,7 @@ function Landing() {
         <p className="month">APRIL</p>
         <h3>5 6 7</h3>
         <p>GEC IDUKKI</p>
-        <a href="https://drive.google.com/file/d/18av_nSavGaPboWRiNu1ACp-oZCtJ5x4O/view?usp=sharing" target="_blank">See Guidelines</a>
+        <a href="https://drive.google.com/file/d/1mINXLnRM5IrdvVeKYNRG4ZqQ3yiwKNSM/view?usp=drive_link" target="_blank">See Guidelines</a>
       </section>
     </div>
   );
