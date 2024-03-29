@@ -1,8 +1,6 @@
 @import "../Variables.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Noto+Serif+Malayalam:wght@100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Noto+Serif+Malayalam:wght@100..900&display=swap");
 
 .Landing {
   position: absolute;
@@ -23,12 +21,12 @@
     background-size: cover;
     overflow-x: hidden;
     .Dheeravam {
-      font-family:"Noto Serif Malayalam", serif;
+      font-family: "Noto Serif Malayalam", serif;
       margin-top: 100px;
       margin-bottom: 16px;
     }
-    
-    .month{
+
+    .month {
       margin-top: 16px;
       margin-bottom: -8px;
     }
@@ -41,12 +39,19 @@
       font-size: 2rem;
       font-weight: bold;
     }
+    .date {
+      background-image: url("https://img.freepik.com/free-vector/hand-drawn-vintage-floral-pattern_79603-1671.jpg?w=996&t=st=1711747426~exp=1711748026~hmac=e385fe4bb3814dae186042a34f2f03e4814fabbff0171fcd9d1ff3c6f3b2ce67");
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
     h3 {
       font-size: 3rem;
       font-weight: bold;
       color: red;
     }
-    a{
+    a {
       margin-top: 24px;
       padding: 0.6rem 1.6rem;
       border: none;
