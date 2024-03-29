@@ -11,7 +11,7 @@ function Landing() {
         <img src={KavettamLogo} alt="Daksha" />
         <h4>ARTS FEST</h4>
         <p className="month">APRIL</p>
-        <h3>5 6 7</h3>
+        <h3 className="date">5 6 7</h3>
         <p>GEC IDUKKI</p>
         <a href="https://drive.google.com/file/d/1mINXLnRM5IrdvVeKYNRG4ZqQ3yiwKNSM/view?usp=drive_link" target="_blank">See Guidelines</a>
       </section>
