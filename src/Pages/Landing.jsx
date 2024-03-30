@@ -7,12 +7,12 @@ import CardCarousel from "../Components/CardCarousel";
 function Landing() {
   const cards = [
     {
-      image: '/assets/kalajadha.jpeg',
+      image: 'https://i.ibb.co/ZSDxJF6/kalajadha.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
     {
-      image: '/assets/fancy.jpeg',
+      image: 'https://i.ibb.co/rFsc8D3/fancy.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
@@ -20,7 +20,7 @@ function Landing() {
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
-      image: '/assets/shortfilm.jpeg',
+      image: 'https://i.ibb.co/Q7VkS1C/shortfilm.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
