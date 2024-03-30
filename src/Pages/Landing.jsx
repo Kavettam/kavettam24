@@ -7,7 +7,7 @@ import CardCarousel from "../Components/CardCarousel";
 function Landing() {
   const cards = [
     {
-      image: 'src/assets/kalajadha.jpeg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx727qfdvbDoAuHSnbNJco3XYcHV48kV2qLdm6h3EarQ&s',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
