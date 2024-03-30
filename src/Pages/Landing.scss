@@ -8,7 +8,7 @@
   overflow-x: hidden; // Prevent horizontal overflow
  
   .Hero {
-     height: 200vh;
+     height: auto;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -24,7 +24,7 @@
   
      .Dheeravam {
        font-family: "Noto Serif Malayalam", serif;
-       margin-top: -50px;
+       margin-top: 80px;
        margin-bottom: 16px;
      }
  

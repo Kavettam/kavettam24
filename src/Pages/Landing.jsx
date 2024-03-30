@@ -20,7 +20,7 @@ function Landing() {
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
-      image: 'src/assets/kalajadha.jpeg',
+      image: 'src/assets/shortfilm.jpeg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
@@ -30,7 +30,7 @@ function Landing() {
     <div className="Landing">
       <section className="Hero">
         <p className="Dheeravam">ധീരവം കോളേജ് യൂണിയൻ അവതരിപ്പിക്കുന്നു</p>
-        <img src={KavettamLogo} alt="Daksha" />
+        <img src={KavettamLogo} alt="kavettam" />
         <h4>ARTS FEST</h4>
         <p className="month">APRIL</p>
         <h3 className="date">5 6 7</h3>

@@ -21,7 +21,7 @@ function Navbar() {
       <div className="nav--container">
         <Link to="/">
           <div className="nav--logo">
-            <img className="logo" src={Logo} alt="Daksha24 Logo" />
+            <img className="logo" src={Logo} alt="Kavettam Logo" />
           </div>
         </Link>
         <nav className={`nav--links ${isMenuOpen && "active"}`}>
@@ -32,12 +32,12 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav--link">
-              <NavLink onClick={() => toggleChecked(true)} to="/events">
+              <NavLink onClick={() => toggleChecked(true)} to="/NoPage">
                 Events
               </NavLink>
             </li>
             <li className="nav--link">
-              <NavLink onClick={() => toggleChecked(true)} to="/board">
+              <NavLink onClick={() => toggleChecked(true)} to="/NoPage">
                 Leader Board
               </NavLink>
             </li>
