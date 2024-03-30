@@ -16,7 +16,7 @@ function Landing() {
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
-      image: '/assets/collage.jpeg',
+      image: 'https://i.ibb.co/313QwKh/collage.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
