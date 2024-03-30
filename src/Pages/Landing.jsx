@@ -2,8 +2,30 @@ import React from "react";
 
 import "./Landing.scss";
 import KavettamLogo from "../assets/kavettam.png";
+import CardCarousel from "../Components/CardCarousel";
 
 function Landing() {
+  const cards = [
+    {
+      image: 'src/assets/kalajadha.jpeg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
+    {
+      image: 'src/assets/fancy.jpeg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },  {
+      image: 'src/assets/collage.jpeg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },  {
+      image: 'src/assets/kalajadha.jpeg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
+ ];
+
   return (
     <div className="Landing">
       <section className="Hero">
@@ -14,7 +36,10 @@ function Landing() {
         <h3 className="date">5 6 7</h3>
         <p>GEC IDUKKI</p>
         <a href="https://drive.google.com/file/d/1mINXLnRM5IrdvVeKYNRG4ZqQ3yiwKNSM/view?usp=drive_link" target="_blank">See Guidelines</a>
+        <CardCarousel cards={cards} />
+
       </section>
+
     </div>
   );
 }

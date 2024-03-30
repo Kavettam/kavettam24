@@ -1,0 +1,42 @@
+.card-carousel {
+    display: flex;
+    overflow-x: auto; // Enable horizontal scrolling
+    overflow-y: hidden; // Prevent vertical scrolling
+    width: 100%; // Ensure the carousel takes the full width of its container
+    height: auto; // Adjust the height as needed
+    padding: 05px; // Add some padding around the carousel
+    box-sizing: border-box; // Ensure padding is included in the width
+    white-space: nowrap; // Prevent cards from wrapping to the next line
+    .card {
+       flex: 0 0 auto;
+       width: 35%; // Adjust the width as needed
+       margin-right:05px; // Add some space between cards
+       opacity: 0.5; // Make all cards partially visible
+       transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+   
+       &.active {
+         opacity: 1; // Make the active card fully visible
+       }
+   
+       img {
+         width: 60%;
+         height: auto;
+       }
+   
+    //    .card-content {
+    //      padding: 20px;
+    //      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+    //      color: white;
+   
+    //      h3 {
+    //        margin: 0;
+    //        font-size: 24px;
+    //      }
+   
+    //      p {
+    //        margin-top: 10px;
+    //        font-size: 16px;
+    //      }
+       }
+    }
+   
