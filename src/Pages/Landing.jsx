@@ -7,20 +7,20 @@ import CardCarousel from "../Components/CardCarousel";
 function Landing() {
   const cards = [
     {
-      image: 'https://ibb.co/kK7vpZc',
+      image: 'assets/kalajadha.jpeg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
     {
-      image: 'src/assets/fancy.jpeg',
+      image: 'assets/fancy.jpeg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
-      image: 'src/assets/collage.jpeg',
+      image: 'assets/collage.jpeg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },  {
-      image: 'src/assets/shortfilm.jpeg',
+      image: 'assets/shortfilm.jpeg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
