@@ -7,7 +7,7 @@ import CardCarousel from "../Components/CardCarousel";
 function Landing() {
   const cards = [
     {
-      image: 'https://drive.google.com/file/d/1Wa7rdtP4C7C9wkJ75RTvZMIqLDS29XQN/view?usp=sharing',
+      image: 'https://ibb.co/kK7vpZc',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
