@@ -1,73 +1,64 @@
 import { useState, useEffect } from "react";
-
 import "./Board.scss";
 import Spinner from "../Components/Spinner";
 
 function Board() {
-  const columns = ["Team", "Points"];
-  const [boardData, setBoardData] = useState([]);
-  const [lastUpdatedTime, setLastUpdatedTime] = useState(new Date());
-  const [mins, setMins] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
+ const [boardData, setBoardData] = useState([]);
+ const [lastUpdatedTime, setLastUpdatedTime] = useState(new Date());
+ const [mins, setMins] = useState(0);
+ const [isLoading, setIsLoading] = useState(false);
 
-  const getLastUpdatedTime = () => {
+ const getLastUpdatedTime = () => {
     setMins(Math.floor(Math.abs(new Date() - lastUpdatedTime) / 60000));
-  };
+ };
 
-  function ordinal_suffix_of(i) {
-    let j = i % 10,
-      k = i % 100;
-    if (j === 1 && k !== 11) {
-      return i + "st";
-    }
-    if (j === 2 && k !== 12) {
-      return i + "nd";
-    }
-    if (j === 3 && k !== 13) {
-      return i + "rd";
-    }
-    return i + "th";
-  }
-
-  const getBoardData = () => {
+ const getBoardData = () => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbzoY2wgIh1avoQA_dI6rgTyVBw1aqXN3GLgX_BJKle-U1lohOLq3LL9qo7k1682iNEF/exec?type=leaderboard"
+      "https://script.google.com/macros/s/AKfycbzRybl5PrzikbJChLNYwUk6i0J8tlQaaeMf4LxRmMN6xrhIPY4bArTOzXJk56y7xIo/exec" // Replace YOUR_SCRIPT_ID with your actual script ID
     )
       .then((response) => response.json())
       .then((data) => {
-        setBoardData(
-          data.data.sort((a, b) => {
-            return b.Point - a.Point;
-          })
-        );
-        setIsLoading(false);
-        setLastUpdatedTime(new Date());
-        getLastUpdatedTime();
-        // console.log(boardData);
+        if (data.success) {
+          const leaderboardData = data.data.map((item) => {
+            // Assuming the first key in each item object is the team name and the second key is the points
+            const teamName = Object.keys(item)[0];
+            const points = Object.values(item)[0];
+            return { Team: teamName, Points: points };
+          });
+
+          setBoardData(
+            leaderboardData.sort((a, b) => b.Points - a.Points)
+          );
+          setIsLoading(false);
+          setLastUpdatedTime(new Date());
+          getLastUpdatedTime();
+        } else {
+          window.alert("Failed to fetch data");
+        }
       })
       .catch((error) => window.alert("Loading Failed"));
-  };
+ };
 
-  useEffect(() => {
+ useEffect(() => {
     getBoardData();
-  }, []);
+ }, []);
 
-  useEffect(() => {
+ useEffect(() => {
     const interval1 = setInterval(() => {
       getBoardData();
-    }, 1000 * 60 * 5);
+    }, 1000 * 60 * 5); // Fetch data every 5 minutes
     return () => clearInterval(interval1);
-  }, []);
+ }, []);
 
-  useEffect(() => {
+ useEffect(() => {
     const interval2 = setInterval(() => {
       getLastUpdatedTime();
-    }, 1000 * 60 * 1);
+    }, 1000 * 60 * 1); // Update last updated time every minute
     return () => clearInterval(interval2);
-  }, []);
+ }, []);
 
-  return (
+ return (
     <div className="board--box">
       <div className="title--box">
         <h1>Leader Board</h1>
@@ -79,18 +70,14 @@ function Board() {
         <table>
           <thead>
             <tr>
-              {columns.map((title, index) => (
-                <th key={index}>{title}</th>
-              ))}
+              <th>Team</th>
+              <th>Points</th>
             </tr>
           </thead>
           <tbody>
             {boardData.map((row, index) => (
               <tr key={index}>
-                <td className="teamName">
-                  {row.Team}
-                  {/* <span>{`${ordinal_suffix_of(row.Year)} year`}</span> */}
-                </td>
+                <td className="teamName">{row.Team}</td>
                 <td className="points">{row.Points}</td>
               </tr>
             ))}
@@ -98,7 +85,7 @@ function Board() {
         </table>
       )}
     </div>
-  );
+ );
 }
 
 export default Board;

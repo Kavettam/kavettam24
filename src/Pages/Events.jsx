@@ -11,7 +11,7 @@ function Events() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbyCS7Z0d6KTycYvcC18p3yPGBHoc1S6CF7OJ-19G5CnAph9jFB0LyRwNAAfvzyChUIN/exec?type=events"
+      "https://script.google.com/macros/s/AKfycbyihaD4YEgh2Baq3A84CasfVNmVrEWrgjMsEuGIuhCy0xFybDBjeVN0xXYQqYeh3itJ/exec?type=events"
     )
       .then((response) => response.json())
       .then((data) => {

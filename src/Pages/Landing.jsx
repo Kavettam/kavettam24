@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect }from "react";
 
+import Modal from "../Components/Modal";
 import "./Landing.scss";
 import KavettamLogo from "../assets/kavettam.png";
 import CardCarousel from "../Components/CardCarousel";
 
 function Landing() {
+  const [showModal, setShowModal] = useState(false);
+  const latestImageUrl = 'https://i.ibb.co/vXnCrD6/Whats-App-Image-2024-03-31-at-6-30-02-PM.jpg'; // Replace with your latest image URL
+ 
+  useEffect(() => {
+     setShowModal(true);
+  }, []);
   const cards = [
     {
       image: 'https://i.ibb.co/ZSDxJF6/kalajadha.jpg',
@@ -19,8 +26,14 @@ function Landing() {
       image: 'https://i.ibb.co/313QwKh/collage.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
-    },  {
-      image: 'https://i.ibb.co/Q7VkS1C/shortfilm.jpg',
+    },  
+    {
+      image: 'https://i.ibb.co/vXnCrD6/Whats-App-Image-2024-03-31-at-6-30-02-PM.jpg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
+    {
+      image: 'https://i.ibb.co/LvYc7tN/Whats-App-Image-2024-03-31-at-9-30-04-PM.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
@@ -28,6 +41,7 @@ function Landing() {
 
   return (
     <div className="Landing">
+       <Modal isOpen={showModal} onClose={() => setShowModal(false)} imageUrl={latestImageUrl} />
       <section className="Hero">
         <p className="Dheeravam">ധീരവം കോളേജ് യൂണിയൻ അവതരിപ്പിക്കുന്നു</p>
         <img src={KavettamLogo} alt="kavettam" />
