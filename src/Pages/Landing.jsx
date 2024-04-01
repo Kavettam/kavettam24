@@ -7,7 +7,7 @@ import CardCarousel from "../Components/CardCarousel";
 
 function Landing() {
   const [showModal, setShowModal] = useState(false);
-  const latestImageUrl = 'https://ibb.co/JpWwLFy'; // Replace with your latest image URL
+  const latestImageUrl = ' "https://i.ibb.co/B6H5DKr/Whats-App-Image-2024-04-01-at-21-29-50-ff3af495.jpg" '; // Replace with your latest image URL
  
   useEffect(() => {
      setShowModal(true);
