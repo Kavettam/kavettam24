@@ -37,6 +37,12 @@ function Landing() {
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
+
+    {
+      image: 'https://i.ibb.co/B6H5DKr/Whats-App-Image-2024-04-01-at-21-29-50-ff3af495.jpg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
  ];
 
   return (
