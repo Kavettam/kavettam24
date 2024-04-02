@@ -41,6 +41,11 @@ function Navbar() {
                 Leader Board
               </NavLink>
             </li>
+            <li className="nav--link">
+              <NavLink onClick={() => toggleChecked(true)} to="/Gallery">
+                Gallery
+              </NavLink>
+            </li>
           </ul>
         </nav>
         {/* <Link className="nav--cta" to="/register">
