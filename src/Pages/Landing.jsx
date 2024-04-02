@@ -7,7 +7,7 @@ import CardCarousel from "../Components/CardCarousel";
 
 function Landing() {
   const [showModal, setShowModal] = useState(false);
-  const latestImageUrl = 'https://i.ibb.co/B6H5DKr/Whats-App-Image-2024-04-01-at-21-29-50-ff3af495.jpg'; // Replace with your latest image URL
+  const latestImageUrl = 'https://i.ibb.co/D5HTRd2/day-2.jpg'; // Replace with your latest image URL
  
   useEffect(() => {
      setShowModal(true);
@@ -40,6 +40,11 @@ function Landing() {
 
     {
       image: 'https://i.ibb.co/B6H5DKr/Whats-App-Image-2024-04-01-at-21-29-50-ff3af495.jpg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
+    {
+      image: 'https://i.ibb.co/D5HTRd2/day-2.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
