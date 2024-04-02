@@ -9,6 +9,7 @@ import Landing from "./Pages/Landing";
 import Board from "./Pages/Board";
 import NoPage from "./Pages/NoPage";
 import Events from "./Pages/Events";
+import Gallery from './Pages/Gallery';
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route path="/board" element={<Board />} />
           <Route path="/events" element={<Events />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="/gallery" element={<Gallery />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
