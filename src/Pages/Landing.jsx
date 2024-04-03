@@ -7,7 +7,7 @@ import CardCarousel from "../Components/CardCarousel";
 
 function Landing() {
   const [showModal, setShowModal] = useState(false);
-  const latestImageUrl = 'https://i.ibb.co/D5HTRd2/day-2.jpg'; // Replace with your latest image URL
+  const latestImageUrl = 'https://i.ibb.co/BPTCmDn/day-3.jpg'; // Replace with your latest image URL
  
   useEffect(() => {
      setShowModal(true);
@@ -45,6 +45,11 @@ function Landing() {
     },
     {
       image: 'https://i.ibb.co/D5HTRd2/day-2.jpg',
+      // title: 'Card 1',
+      // description: 'This is the first card.',
+    },
+    {
+      image: 'https://i.ibb.co/BPTCmDn/day-3.jpg',
       // title: 'Card 1',
       // description: 'This is the first card.',
     },
