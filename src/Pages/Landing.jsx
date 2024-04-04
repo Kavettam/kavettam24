@@ -4,10 +4,8 @@ import Modal from "../Components/Modal";
 import "./Landing.scss";
 import KavettamLogo from "../assets/kavettam.png";
 import CardCarousel from "../Components/CardCarousel";
-import Events from "../Pages/Events";
-import Board from "../Pages/Board";
-import Gallery from "../Pages/Gallery";
-import NoPage from "../Pages/NoPage";
+
+
 function Landing() {
   const [showModal, setShowModal] = useState(false);
   const latestImageUrl = 'https://i.ibb.co/3f6rxNV/dayon1.jpg'; // Replace with your latest image URL
