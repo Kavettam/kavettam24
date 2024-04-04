@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, imageUrl }) => {
       const timer = setTimeout(() => {
         setFadeOut(true);
         setTimeout(() => onClose(), 300); // Wait for the transition to complete
-      }, 5000);
+      }, 10000);
 
       // Function to handle clicks outside the modal content
       const handleClickOutside = (event) => {
