@@ -32,7 +32,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav--link">
-              <NavLink onClick={() => toggleChecked(true)} to="/Events">
+              <NavLink onClick={() => toggleChecked(true)} to="/NoPage">
                 Events
               </NavLink>
             </li>
