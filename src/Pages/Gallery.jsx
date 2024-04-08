@@ -4,9 +4,11 @@ import './Gallery.scss';
 const Gallery = () => {
  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
  const images = [
-    { src: 'https://i.ibb.co/ZSDxJF6/kalajadha.jpg', alt: 'Image 1' },
-    { src: 'https://i.ibb.co/ZSDxJF6/kalajadha.jpg', alt: 'Image 2' },
-    // Add more images as needed
+    
+    { src: 'https://i.ibb.co/T1MtFLL/champ.jpg', alt: 'Image 1' },
+    { src: 'https://i.ibb.co/jzNGJgv/kalathilakam.jpg', alt: 'Image 2' },
+    { src: 'https://i.ibb.co/Syb5vqs/prathibha.jpg', alt: 'Image 3' },
+    { src: 'https://i.ibb.co/MDndsNz/sargaprathibha.jpg', alt: 'Image 4' },
  ];
 
  const handleImageClick = (index) => {
